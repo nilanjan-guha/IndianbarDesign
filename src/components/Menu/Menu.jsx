@@ -67,7 +67,7 @@ const Menu = () => {
       snap: {
         x: (value) => Math.round(value / 50) * 50, // snap grid 50px (customize)
         y: (value) => Math.round(value / 50) * 50,
-        rotation: (value) => Math.round(value / 45) * 45, // snap rotation every 45°
+        // rotation: (value) => Math.round(value / 45) * 45, // snap rotation every 45°
       },
     });
   }, [currentIndex]);

@@ -19,153 +19,153 @@ const navLinks = [
 
 const cocktailLists = [
   {
-    name: "Chapel Hill Shiraz",
-    country: "AU",
-    detail: "Battle",
-    price: "$10",
-  },
-  {
-    name: "Caten Malbee",
-    country: "AU",
-    detail: "Battle",
-    price: "$49",
-  },
-  {
-    name: "Rhino Pale Ale",
-    country: "CA",
+    name: "Old Monk Rum",
+    country: "IN",
     detail: "750 ml",
-    price: "$20",
+    price: "₹1200",
   },
   {
-    name: "Irish Guinness",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Black Dog Scotch",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹2500",
+  },
+  {
+    name: "Amrut Fusion Whisky",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹3500",
+  },
+  {
+    name: "Royal Challenge Whisky",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹1500",
   },
 ];
 
 const mockTailLists = [
   {
-    name: "Tropical Bloom",
-    country: "US",
-    detail: "Battle",
-    price: "$10",
+    name: "Masala Shikanji",
+    country: "IN",
+    detail: "300 ml",
+    price: "₹150",
   },
   {
-    name: "Passionfruit Mint",
-    country: "US",
-    detail: "Battle",
-    price: "$49",
+    name: "Aam Panna",
+    country: "IN",
+    detail: "300 ml",
+    price: "₹120",
   },
   {
-    name: "Citrus Glow",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
+    name: "Rose Lassi",
+    country: "IN",
+    detail: "400 ml",
+    price: "₹180",
   },
   {
-    name: "Lavender Fizz",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Nimbu Soda",
+    country: "IN",
+    detail: "250 ml",
+    price: "₹100",
   },
 ];
 
 const profileLists = [
   {
-    imgPath: "../../../public/public/images/profile1.png",
+    imgPath: "/images/profile1.png",
   },
   {
-    imgPath: "../../../public/public/images/profile2.png",
+    imgPath: "/images/profile2.png",
   },
   {
-    imgPath: "../../../public/public/images/profile3.png",
+    imgPath: "/images/profile3.png",
   },
   {
-    imgPath: "../../../public/public/images/profile4.png",
+    imgPath: "/images/profile4.png",
   },
 ];
 
 const featureLists = [
-  "Perfectly balanced blends",
-  "Garnished to perfection",
-  "Ice-cold every time",
-  "Expertly shaken & stirred",
+  "Blends inspired by Indian heritage",
+  "Signature local ingredients",
+  "Perfect serve, every time",
+  "Artisanal bartending experience",
 ];
 
 const goodLists = [
-  "Handpicked ingredients",
-  "Signature techniques",
-  "Bartending artistry in action",
-  "Freshly muddled flavors",
+  "Handpicked Indian spices",
+  "Traditional infusion methods",
+  "Craft & culture in every sip",
+  "Fresh seasonal flavors",
 ];
 
 const storeInfo = {
   heading: "Where to Find Us",
-  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+  address: "Connaught Place, New Delhi, India",
   contact: {
-    phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
+    phone: "+91 98765 43210",
+    email: "hello@indiancocktails.com",
   },
 };
 
 const openingHours = [
-  { day: "Mon–Thu", time: "11:00am – 12am" },
-  { day: "Fri", time: "11:00am – 2am" },
-  { day: "Sat", time: "9:00am – 2am" },
-  { day: "Sun", time: "9:00am – 1am" },
+  { day: "Mon–Thu", time: "12:00pm – 12am" },
+  { day: "Fri", time: "12:00pm – 2am" },
+  { day: "Sat", time: "11:00am – 2am" },
+  { day: "Sun", time: "11:00am – 1am" },
 ];
 
 const socials = [
   {
     name: "Instagram",
-    icon: "../../../public/public/images/insta.png",
-    url: "#",
+    icon: "/images/insta.png",
+    url: "https://instagram.com/indiancocktails",
   },
   {
     name: "X (Twitter)",
-    icon: "../../../public/public/images/x.png",
-    url: "#",
+    icon: "/images/x.png",
+    url: "https://twitter.com/indiancocktails",
   },
   {
     name: "Facebook",
-    icon: "../../../public/public/images/fb.png",
-    url: "#",
+    icon: "/images/fb.png",
+    url: "https://facebook.com/indiancocktails",
   },
 ];
 
 const allCocktails = [
   {
     id: 1,
-    name: "Classic Mojito",
-    image: "../../../public/public../../../public/public/images/drink1.png",
-    title: "Simple Ingredients, Bold Flavor",
+    name: "Old Monk Mojito",
+    image: "/images/OldMonkdrink1.png",
+    title: "Classic Rum With an Indian Twist",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "The legendary Old Monk dark rum, muddled with mint, lime, and soda for a refreshing desi spin on the Cuban classic.",
   },
   {
     id: 2,
-    name: "Raspberry Mojito",
-    image: "../../../public/public/images/drink2.png",
-    title: "A Zesty Classic That Never Fails",
+    name: "Black Dog Sour",
+    image: "/images/BlackDogSourdrink2.png",
+    title: "Smooth Scotch Meets Tangy Citrus",
     description:
-      "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+      "Premium Black Dog Scotch paired with lemon juice and sugar syrup, finished with a dash of egg white for a silky texture.",
   },
   {
     id: 3,
-    name: "Violet Breeze",
-    image: "../../../public/public/images/drink3.png",
-    title: "Simple Ingredients, Bold Flavor",
+    name: "Amrut Fusion Tonic",
+    image: "/images/AmrutFusionTonicdrink3.png",
+    title: "Indian Whisky at its Finest",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "A refreshing highball featuring Amrut Fusion whisky, Indian tonic water, and a hint of ginger.",
   },
   {
     id: 4,
-    name: "Curacao Mojito",
-    image: "../../../public/public/images/drink4.png",
-    title: "Crafted With Care, Poured With Love",
+    name: "Royal Challenge Mule",
+    image: "/images/RoyalChallengeMuledrink4.png",
+    title: "A Kick of Spice and Freshness",
     description:
-      "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+      "Royal Challenge whisky shaken with lime juice, topped with ginger beer and garnished with fresh mint.",
   },
 ];
 

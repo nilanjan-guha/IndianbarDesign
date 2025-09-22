@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Modern Negra";
-  src: url("../public/public/fonts/Modern\ Negra\ Demo.ttf") format("truetype");
+  src: url("/fonts/Modern\ Negra\ Demo.ttf") format("truetype");
 }
 
 :root {
@@ -74,7 +74,7 @@ body {
   }
 
   .masked-img {
-    mask-image: url("../../public/public/images/mask.png");
+    mask-image: url("/images/mask.png");
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 50%;
@@ -109,7 +109,7 @@ body {
   }
 
   .noisy {
-    @apply absolute inset-0 size-full bg-[url("../public/public/images/noise.png")];
+    @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
   }
 
   #hero {
@@ -306,20 +306,24 @@ body {
 
   #menu {
     @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
+    z-index: 1; /* Base z-index for the section */
 
     #m-left-leaf {
       @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
+      z-index: 2; /* Ensure leaves are below interactive elements */
     }
 
     #m-right-leaf {
       @apply object-contain absolute -top-40 right-0 md:w-fit w-1/4;
+      z-index: 2;
     }
 
     .cocktail-tabs {
-      @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
+      @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative;
+      z-index: 20; /* Higher z-index to ensure clickability */
 
       button {
-        @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow  transition-colors font-modern-negra;
+        @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow transition-colors font-modern-negra;
       }
     }
 
@@ -328,45 +332,50 @@ body {
 
       .arrows {
         @apply flex items-center justify-between w-full absolute;
+        z-index: 20; /* Higher z-index for arrow buttons */
 
         button {
           @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
+          pointer-events: auto; /* Ensure buttons are clickable */
 
           span {
             @apply text-3xl font-modern-negra leading-none hidden md:block;
           }
         }
       }
-    }
 
-    .cocktail {
-      @apply flex-center mt-10;
+      .cocktail {
+        @apply flex-center mt-10;
+        z-index: 10; /* Lower than buttons but above leaves */
 
-      img {
-        @apply object-contain h-[60vh];
-      }
-    }
-
-    .recipe {
-      @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
-
-      .info {
-        @apply space-y-4 lg:translate-y-20;
-
-        #title {
-          @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
+        img {
+          @apply object-contain h-[60vh];
+          pointer-events: auto; /* Allow dragging on the image */
         }
       }
 
-      .details {
-        @apply space-y-5 md:max-w-md text-left;
+      .recipe {
+        @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+        z-index: 15; /* Above cocktail image but below buttons */
 
-        h2 {
-          @apply md:text-5xl text-3xl font-serif;
+        .info {
+          @apply space-y-4 lg:translate-y-20;
+
+          #title {
+            @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
+          }
         }
 
-        p {
-          @apply md:text-lg pe-5;
+        .details {
+          @apply space-y-5 md:max-w-md text-left;
+
+          h2 {
+            @apply md:text-5xl text-3xl font-serif;
+          }
+
+          p {
+            @apply md:text-lg pe-5;
+          }
         }
       }
     }
